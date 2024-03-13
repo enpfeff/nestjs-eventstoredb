@@ -1,0 +1,14 @@
+# source
+example
+node_modules
+src
+index.ts
+package-lock.json
+tsconfig.json
+tsconfig.build.json
+
+.eslintignore
+.eslintrc.js
+.prettierrc.json
+.prettierignore
+.release-it.json
