@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-eventstoredb",
+  "name": "enpfeff/nestjs-eventstoredb",
   "version": "0.0.1",
   "description": "A nestjs event store db extension",
   "main": "dist/index.js",

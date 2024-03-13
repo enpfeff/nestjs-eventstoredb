@@ -14,8 +14,12 @@ jobs:
           node-version-file: ".nvmrc"
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
-      - name: Install dependencies and build 🔧
+      - name: Install dependencies 🔧
         run: npm ci
+
+      - name: Build
+        run: npm run build
+
       - name: Publish package on NPM 📦
         run: npm publish
         env:
