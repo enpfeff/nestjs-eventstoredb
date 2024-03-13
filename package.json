@@ -11,11 +11,15 @@
     "test": "jest --passWithNoTests",
     "build": "tsc -p tsconfig.json",
     "lint": "eslint \"src/**/*.ts\"",
-    "format": "prettier -c \"src/**/*.ts\""
+    "format": "prettier -c \"src/**/*.ts\"",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit $1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^19.1.0",
+    "@commitlint/config-conventional": "^19.1.0",
     "@nestjs/common": "^10.3.3",
     "@nestjs/config": "^3.2.0",
     "@nestjs/core": "^10.3.3",
@@ -51,5 +55,10 @@
     "@nestjs/core": "^10.3.3",
     "@nestjs/cqrs": "^10.2.7",
     "nest-commander": "^3.12.5"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
