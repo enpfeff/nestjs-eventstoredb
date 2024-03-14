@@ -5,5 +5,7 @@ export * from './eventstore';
 export * from './eventstore.config';
 export * from './eventstore.constants';
 export * from './eventstore.mapper';
+export * from './eventstore.module';
 export * from './eventstore.restore';
+export * from './eventstore-core.module';
 export * from './services';
