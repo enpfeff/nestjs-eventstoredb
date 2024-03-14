@@ -1,3 +1,12 @@
+## [0.0.7](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.6...v0.0.7) (2024-03-14)
+
+
+### Bug Fixes
+
+* add in eventstore modules ([#9](https://github.com/enpfeff/nestjs-eventstoredb/issues/9)) ([b11b1f8](https://github.com/enpfeff/nestjs-eventstoredb/commit/b11b1f8a4228527459faf253ca4d8ac55253390e))
+
+
+
 ## [0.0.6](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.5...v0.0.6) (2024-03-14)
 
 
