@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.5...v0.0.6) (2024-03-14)
+
+
+### Bug Fixes
+
+* release protocols ([#8](https://github.com/enpfeff/nestjs-eventstoredb/issues/8)) ([7c51492](https://github.com/enpfeff/nestjs-eventstoredb/commit/7c51492930dfee8f2b3df767169fb715f8360c02))
+
+
+
 ## [0.0.5](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.4...v0.0.5) (2024-03-14)
 
 
