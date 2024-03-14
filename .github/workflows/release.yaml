@@ -15,18 +15,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v5.2.1
         with:
-          github-token: ${{ secrets.PA_TOKEN }}
+          github-token: ${{ steps.generate-token.outputs.token }}
           version-file: './package.json,./package-lock.json'
 
       - name: create release
         uses: comnoco/create-release-action@v2.0.5
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.PA_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         with:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
