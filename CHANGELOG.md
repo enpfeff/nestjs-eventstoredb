@@ -1,3 +1,12 @@
+## [0.0.10](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.9...v0.0.10) (2024-04-17)
+
+
+### Bug Fixes
+
+* dont let rxjs use a null object ([ebca66d](https://github.com/enpfeff/nestjs-eventstoredb/commit/ebca66d1dfe1e6f4c25da349380244e773809487))
+
+
+
 ## [0.0.9](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.8...v0.0.9) (2024-04-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * release protocols ([#8](https://github.com/enpfeff/nestjs-eventstoredb/issues/8)) ([7c51492](https://github.com/enpfeff/nestjs-eventstoredb/commit/7c51492930dfee8f2b3df767169fb715f8360c02))
-
-
-
-## [0.0.5](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.4...v0.0.5) (2024-03-14)
-
-
-### Bug Fixes
-
-* test release ([e07a952](https://github.com/enpfeff/nestjs-eventstoredb/commit/e07a95263541f5d59fa66f19dfcbf73fe2fd0aff))
 
 
 
