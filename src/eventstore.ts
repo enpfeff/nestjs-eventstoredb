@@ -45,6 +45,9 @@ export class EventStore
         const domainEvent = this.mapper.resolveEventToDomainEvent(
           resolvedEvent,
         ) as T;
+        if (!domainEvent) {
+          return;
+        }
         subject.next(domainEvent);
       } catch (e) {
         return;
