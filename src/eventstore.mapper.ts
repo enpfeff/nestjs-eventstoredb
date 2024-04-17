@@ -1,11 +1,12 @@
 import { JSONType, ResolvedEvent } from '@eventstore/db-client';
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 
 import { Event, Metadata } from './domain';
 import { TransformService } from './services/transform.service';
 
 @Injectable()
 export class EventStoreMapper {
+  logger: Logger = new Logger(EventStoreMapper.name);
   constructor(private readonly transformers: TransformService) {}
 
   public resolveEventToDomainEvent(resolvedEvent: ResolvedEvent): Event | null {
@@ -23,6 +24,7 @@ export class EventStoreMapper {
         new Event(metadata.aggregateId, payload),
       ).withMetadata(metadata);
     } catch (e) {
+      this.logger.warn(`Failed to transform event ${event.type}`);
       return null;
     }
   }
