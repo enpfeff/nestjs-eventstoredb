@@ -16,10 +16,15 @@ export class EventStoreMapper {
 
     const metadata = event.metadata as unknown as Metadata;
     const payload = this.extractPayload(resolvedEvent);
-    const transformer = this.transformers.getTransformerToEvent(resolvedEvent);
-    return transformer?.(new Event(metadata.aggregateId, payload)).withMetadata(
-      metadata,
-    );
+    try {
+      const transformer =
+        this.transformers.getTransformerToEvent(resolvedEvent);
+      return transformer?.(
+        new Event(metadata.aggregateId, payload),
+      ).withMetadata(metadata);
+    } catch (e) {
+      return null;
+    }
   }
 
   private extractPayload(event: ResolvedEvent): JSONType {
