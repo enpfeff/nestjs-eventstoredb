@@ -1,3 +1,12 @@
+## [0.0.8](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.7...v0.0.8) (2024-04-17)
+
+
+### Bug Fixes
+
+* make sure we dont care about events you dont care about ([b4b3972](https://github.com/enpfeff/nestjs-eventstoredb/commit/b4b397272b21c6408e811f4f980b8cec62ab8379))
+
+
+
 ## [0.0.7](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.6...v0.0.7) (2024-03-14)
 
 
