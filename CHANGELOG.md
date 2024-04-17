@@ -1,3 +1,12 @@
+## [0.0.9](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.8...v0.0.9) (2024-04-17)
+
+
+### Bug Fixes
+
+* be safer when dealing with events ([#11](https://github.com/enpfeff/nestjs-eventstoredb/issues/11)) ([c604157](https://github.com/enpfeff/nestjs-eventstoredb/commit/c6041573cf5721903a06d00eb85991c118a4013b))
+
+
+
 ## [0.0.8](https://github.com/enpfeff/nestjs-eventstoredb/compare/v0.0.7...v0.0.8) (2024-04-17)
 
 
@@ -31,18 +40,6 @@
 ### Bug Fixes
 
 * test release ([e07a952](https://github.com/enpfeff/nestjs-eventstoredb/commit/e07a95263541f5d59fa66f19dfcbf73fe2fd0aff))
-
-
-
-## [0.0.4](https://github.com/enpfeff/nestjs-eventstoredb/compare/6e1c3de2ef55e62d14366fe506a92364f599e0a0...v0.0.4) (2024-03-14)
-
-
-### Bug Fixes
-
-* fix release ([6e1c3de](https://github.com/enpfeff/nestjs-eventstoredb/commit/6e1c3de2ef55e62d14366fe506a92364f599e0a0))
-* override package version ([d8f2782](https://github.com/enpfeff/nestjs-eventstoredb/commit/d8f2782e55d3c3e1d7ad19fa4e613317595e6709))
-* permissions ([74432b7](https://github.com/enpfeff/nestjs-eventstoredb/commit/74432b7aac566fd82cca32161cc50b31bf109a9f))
-* protected branches ([17005b8](https://github.com/enpfeff/nestjs-eventstoredb/commit/17005b8d4f07110743f56b72ee1ce284a29fb65f))
 
 
 
