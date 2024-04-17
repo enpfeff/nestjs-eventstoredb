@@ -41,7 +41,14 @@ export class EventStore
         return;
       }
 
-      subject.next(this.mapper.resolveEventToDomainEvent(resolvedEvent) as T);
+      try {
+        const domainEvent = this.mapper.resolveEventToDomainEvent(
+          resolvedEvent,
+        ) as T;
+        subject.next(domainEvent);
+      } catch (e) {
+        return;
+      }
     };
 
     try {
